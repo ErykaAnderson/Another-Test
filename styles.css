@@ -1,69 +1,135 @@
 @charset "utf-8";
 /*
-   Sample start files #2 is a 2-column fixed layout provided in CMIS 410
-   For educational purposes only
-  Name:
-	Date:
+   sample start file for final project - educational use only
+   
+   Author:   
+   Date:     
+   
+  
+
 */
 
-*	{ padding: 0; 
-		margin: 0;
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(168, 181, 160);
+}
+
+#container {
+    width: 930px;
+    border-width: 1px;
+    margin: 0 auto;
+    background-color: rgb(63, 77, 60);
+	border-radius: 30px;
+	padding: 5px;
 }
 
 
-body { font-size: 1.1em; 
-		font-family: Arial, Helvetica, sans-serif; 
-		background-color: gray;
+header {
+    margin-top: 10px;
+	display: grid;
+	width: 100%;
+    text-align: left;
+}
+
+nav {
+    width: 150px;
+    margin: 0 0px 0 118px; 
+    padding: 54px 5px 54px 10px;
+    float: left;
+	border: 3px solid rgb(245, 241, 232);
+	border-radius: 10px;
+    text-align: center;
+}
+
+nav ul {
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 10px;
+    color: rgb(168, 181, 160);
+	font-family: Garamond, serif;
+	font-size: 25px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: gray;
+    border-radius: 10px;
+    color: white;
+}
+
+#main {
+    width: 550px;
+    padding: 30px;
+    float: right;
+    color: rgb(245, 241, 232);
+    border-left: 3px solid;
+    border-right: 3px solid;  
+	font-family: 'Bodoni Moda SC';	
+}
+
+#main p {
+    text-indent: 1.5em;
+}
+
+figure{
+    padding-top: 375px;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+	color: rgb(168, 181, 160);
+}
+
+h2{
+	font-size: 2.0em;
+	text-align: center;
+    padding-bottom: 0.5em;
+	
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+footer {
+    width: 906px;
+    margin: 0;
+    padding: 10px;
+    clear: both;
+    color: rgb(168, 181, 160);
+    font-weight: bold;
+    text-align: center;
+	border-radius: 25px;
+	border: 3px solid rgb(245, 241, 232);
 }
 
 
-#container { width: 930px; 
-				border-width: 1px; 
-				margin: 0 auto; 
-				background-color: #2196f3;
+/* navigation for footer */
+footer a:link {
+    color: rgb(173, 91, 64);
+    text-decoration: none;
 }
 
-
-#header { width: 910px; 
-			margin: 0 0 10px 0; 
-			padding: 10px; 
-			background-color: #2196f3; 
-			height: 220px;
+footer a:visited {
+    color: rgb(173, 91, 64);
+    background-color: grey;
+    text-decoration: none;
 }
 
-#header img {
-	padding-left: 170px;
+footer a:hover {
+    text-decoration: underline;
 }
 
-#navbar { width: 910px; 
-			margin: 0 0 10px 0; 
-			padding: 10px; 
-			background-color: silver; 
-			height: 25px;
-}
-
-
-#sidebar { width: 200px; 
-			margin: 0 10px 10px 0; 
-			padding: 10px; 
-			background-color: #00f3ff; 
-			float: left; 
-			height: 400px;
-}
-
-
-#main { width: 680px; 
-		margin: 0 0 10px 0; 
-		padding: 10px; 
-		background-color: #9bdce2;
-		float: right; 
-		height: 400px;
-}
-
-
-#footer { width: 910px; 
-			padding: 10px; 
-			background-color: #2196f3;; 
-			clear: both; 
-			height: 75px;
-}

@@ -104,9 +104,11 @@ h3 {
     padding-top: 0.5em;
 }
 
+
+
 footer {
     width: 906px;
-    margin: 0;
+    margin-top: 20px;
     padding: 10px;
     clear: both;
     color: rgb(168, 181, 160);
@@ -131,5 +133,37 @@ footer a:visited {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border:1px solid;  
+  border-color: rgb(63, 77, 60);
+  color: black;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(173, 91, 64);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(178, 161, 145);
+}
+
+h2 {
+	color: rgb(168, 181, 160);
+}
+
+p {
+	color: rgb(168, 181, 160);
+	margin-left: 50px;
 }
 
